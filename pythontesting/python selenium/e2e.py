@@ -36,4 +36,4 @@ driver.find_element(By.XPATH,'//div[@class="checkbox checkbox-primary"]').click(
 driver.find_element(By.XPATH,'//form/input').click()
 successmessage=wait.until(expected_conditions.visibility_of_element_located((By.XPATH, '//div[contains(@class,"success")]'))).text
 assert "Success! Thank you! Your order will be delivered in next few weeks :-)" in successmessage
-
+driver.close()
